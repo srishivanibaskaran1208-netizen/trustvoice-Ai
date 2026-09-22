@@ -76,7 +76,6 @@ No build step required — it's static HTML/CSS/JS.
 
 cd trustvoice
 python -m http.server 5500
-# open http://localhost:5500/dashboard.html
 
 Or just double-click dashboard.html.
 
