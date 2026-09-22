@@ -1,25 +1,5 @@
 TrustVoice is an prototype for AI-Powered Real-Time Detection and Prevention of Voice Cloning Impersonation Attacks. It detects cloned/deepfake voices on calls, cross-checks the speaker's identity, reads intent from what's being said, fuses everything into a single risk score, and — for high-risk calls — automatically verifies with a trusted contact before any harm (like a money transfer) happens.
 
-Core Detection Flow
-Audio/Voice Input
-      │
-      ▼
-Deepfake Detection  ──►  Speaker Verification  ──►  Speech-to-Text
-      │                                                   │
-      ▼                                                   ▼
-              Intent Detection  ◄─────────────────────────┘
-                    │
-                    ▼
-               Risk Fusion
-                    │
-                    ▼
-                  Alert
-                    │
-                    ▼
-       Independent Verification (Trusted Contact)
-                    │
-                    ▼
-              Attack Prevention
 Risk Formula
 Risk = 30% × Voice Authenticity
      + 20% × Speaker Mismatch
